@@ -1,0 +1,15 @@
+
+public class RadioMain_a {
+
+	public static void main(String[] args) {
+	
+		Radio r = new Radio();
+		
+		r.initialize();
+		
+		System.out.println(r);
+		
+		
+	}
+
+}

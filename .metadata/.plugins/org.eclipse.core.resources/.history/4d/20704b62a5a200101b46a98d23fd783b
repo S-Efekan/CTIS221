@@ -1,0 +1,30 @@
+
+public class Book {
+
+	
+		String isbn;
+		String Author;
+		int  version;
+		
+		Book () //no-arg constructor
+		{
+			
+			isbn="548245hfghf";
+			Author="Micheal Johns";
+			version=1;
+		}
+		
+		Book (String newisbn, String newAuthor) //non-default constructor
+		{
+			isbn=newisbn;
+			Author=newAuthor;
+		}
+		
+		Book (String newisbn, String newAuthor, int newVersion) //non-default constructor
+		{
+			isbn=newisbn;
+			Author=newAuthor;
+			version=newVersion;
+		}
+		
+}

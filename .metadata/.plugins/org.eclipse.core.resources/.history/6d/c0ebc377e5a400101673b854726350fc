@@ -1,0 +1,18 @@
+
+class Radio {
+	String name;
+	String type;
+	double frequency;
+	
+	
+	void Radio(){
+		name=null;
+		type=null;
+		frequency=0.0;
+	}
+	
+	void Radio(String){
+		
+	}
+	
+}

@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Q1 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		
+		System.out.print("Enter 5 integer numbers: ");
+		
+		int[] numbers = new int[5];
+		
+		double total = 0;
+		
+		for(int i = 0; i < numbers.length; i++) {
+			numbers[i] = input.nextInt();
+			total = total + numbers[i];
+		}
+		
+		System.out.println("The array content:");
+		for(int i = 0; i < numbers.length; i++) {
+			System.out.printf("%d ",numbers[i]);
+		}
+		System.out.printf("\n");
+		
+		System.out.println("Sum of the numbers: "+total+". Average of the numbers: "+total/5+".");
+		
+		System.out.println("");
+		System.out.println("index	number	diff. to avg.");
+		System.out.println("-----	------	-------------");
+		for(int i = 0; i < numbers.length; i++) {
+			System.out.printf("%d	%d	%f \n",i,numbers[i], total/5-numbers[i]);
+		}
+		
+		
+		
+		
+		input.close();
+	}
+
+}

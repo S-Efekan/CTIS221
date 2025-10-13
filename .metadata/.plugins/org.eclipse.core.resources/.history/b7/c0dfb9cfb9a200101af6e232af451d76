@@ -1,0 +1,87 @@
+import java.util.Scanner;
+
+public class Q2 {
+	
+	
+	int menu() {
+		System.out.printf("	MENU\n1. Initialize Array\n2. Input Array Elements\n3. Output Array Elements\n4. Search a Value\n5. EXIT\n");
+		Scanner input = new Scanner(System.in);
+		
+		int choice = 0;
+		
+		System.out.printf("Enter your choice: ");
+		choice = input.nextInt();
+		
+		while (!(choice > 0 && choice < 6)) {
+			System.out.println("Please enter a valid choice!");
+			System.out.printf("Enter your choice: ");
+			choice = input.nextInt();
+		}
+		
+		input.close();
+		return choice;
+	}
+	
+	
+	
+	void initialize(int[] nums) {
+		
+		for(int i = 0; i > nums.length; i++) {
+			nums[i] = 0;
+		}
+		System.out.println("All elements are initilaized to 0.");
+	}
+	
+	
+	
+	
+	int fillArray(int[] nums) {
+		Scanner input = new Scanner(System.in);
+		
+		
+		System.out.println("Enter the elements of the array:");
+		
+		int i;
+		for(i = 0; i < 10; i++) {
+			nums[i] = input.nextInt();
+			if(nums[i]==0)
+				break;
+		}
+		System.out.println("Size of the array is: "+i);
+		
+		input.close();
+		return i;
+	}
+	
+	void outputArray(int size, int[] nums) {
+		
+		for(int i = 0; i < size; i++) {
+			System.out.printf("%d ",nums[i]);
+		}
+		
+	}
+	
+	
+	
+	int search(int aim, int[] nums, int size) {
+		
+		int found = 0;
+		
+		for (int i = 0; i < size; i++) {
+			if(nums[i]==aim)
+				found = i+1;
+		}
+		
+	}
+	
+	
+
+	public static void main(String[] args) {
+
+		int[] nums = new int[10];
+		
+		
+		
+	}
+
+}
