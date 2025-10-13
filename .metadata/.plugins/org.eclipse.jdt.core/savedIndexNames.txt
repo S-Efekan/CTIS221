@@ -1,3 +1,0 @@
-INDEX VERSION 1.134+/Users/efekansahin/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core
-3012022862.index
-1865797976.index

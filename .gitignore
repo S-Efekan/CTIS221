@@ -1,0 +1,61 @@
+# =====================================
+# 🌟 Eclipse + Java .gitignore Template
+# =====================================
+
+# === Eclipse metadata ===
+.metadata/
+.settings/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+
+# === Eclipse project files ===
+.classpath
+.project
+
+# === Build output ===
+target/
+out/
+build/
+dist/
+*.class
+*.jar
+*.war
+*.ear
+
+# === Logs and reports ===
+*.log
+hs_err_pid*
+replay_pid*
+
+# === OS-specific junk files ===
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# === IDEs ===
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# VSCode
+.vscode/
+
+# === Other ===
+*.orig
+*.rej
+
+# === Environment / Credentials ===
+*.env
+*.key
+*.keystore
+
