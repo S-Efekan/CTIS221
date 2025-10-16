@@ -21,6 +21,23 @@ public class Vitamins {
 		this.codeNumber=codeNumber;
 	}
 	
+	public void setName(String name) {
+		this.name=name;
+	}
+	
+	public void setNumberOfCapsul (int num) {
+		numberOfCapsul=num;
+	}
+	
+	public void setBrand(String brand) {
+		this.brand=brand;
+	}
+	
+	public void setCodeNumber(int num) {
+		codeNumber=num;
+	}
+	
+	
 	public String toString() {
 		
 		String display = new String();
