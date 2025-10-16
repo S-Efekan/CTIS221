@@ -25,6 +25,10 @@ public class HousingProject {
 		this.HousingPlan=HousingPlan;
 	}
 	
+	public void getHousePlan () {
+		System.out.println(HousingPlan);
+	}
+	
 	public void getInput() {
 		Scanner input = new Scanner(System.in);
 		
@@ -37,18 +41,29 @@ public class HousingProject {
 		price=input.nextDouble();
 		System.out.println("Enter the number of payments: ");
 		numberOfPayment=input.nextInt();
+		input.skip("\\R");
 		System.out.println("Enter the house plan: ");
-		HousingPlan=input.next();
+		HousingPlan=input.nextLine();
 		
-		input.close();
+
+
 	}
 	
 	public void discount() {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter the discount persentage: ");
+		
 		int disc = input.nextInt();
+		price = price - (price * disc / 100);
 		
 		
+		System.out.println("Price after discount:");
+		System.out.println("Housing Project");
+		System.out.println("Name: "+brand);
+		System.out.println("City: "+city);
+		System.out.println("Price: "+price);
+		System.out.println("Number of Payments: "+numberOfPayment);
+		System.out.println("House Plan: "+HousingPlan);
 		
 	}
 	
