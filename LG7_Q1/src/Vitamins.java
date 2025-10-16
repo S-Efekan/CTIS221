@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 
 public class Vitamins {
 
@@ -19,6 +21,20 @@ public class Vitamins {
 		this.numberOfCapsul=numberOfCapsul;
 		this.brand=brand;
 		this.codeNumber=codeNumber;
+	}
+	
+	
+	public void getInput() {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter Name: ");
+		setName(input.next());
+		System.out.println("Enter Brand Name: ");
+		setBrand(input.next());
+		System.out.println("Enter the Number of Capsules: ");
+		setNumberOfCapsul(input.nextInt());
+		System.out.println("Enter the Code Number: ");
+		setCodeNumber(input.nextInt());
+		
 	}
 	
 	public void setName(String name) {
