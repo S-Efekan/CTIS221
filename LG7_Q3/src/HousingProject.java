@@ -45,8 +45,6 @@ public class HousingProject {
 		System.out.println("Enter the house plan: ");
 		HousingPlan=input.nextLine();
 		
-
-
 	}
 	
 	public void discount() {
